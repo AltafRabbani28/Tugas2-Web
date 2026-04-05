@@ -1,1 +1,121 @@
-# Tugas2-Web
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>TripSuggest</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #e5e5e5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        nav a.active {
+            background: green;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .signup {
+            background: green;
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('pemandangan.jpg') no-repeat center/cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-left: 80px;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            top: 0;
+            left: 0;
+        }
+
+        .content {
+            position: relative;
+            color: white;
+            max-width: 500px;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: green;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">TripSuggest</div>
+        <nav>
+            <a href="#">BERANDA</a>
+            <a href="#">TENTANG</a>
+            <a href="#" class="active">LAYANAN</a>
+            <a href="#">KONTAK</a>
+        </nav>
+        <button class="signup">Daftar</button>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Jelajahi Tempat Indah Bersama Kami</h1>
+            <p>Nikmati pengalaman perjalanan terbaik dengan destinasi pilihan.</p>
+            <button class="btn">Pelajari Lebih Lanjut</button>
+        </div>
+    </section>
+
+</body>
+</html>
